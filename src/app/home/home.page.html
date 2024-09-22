@@ -13,5 +13,22 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container"></div>
+  <ion-item>
+    <ion-select [(ngModel)]="selectedBasemap" (ionChange)="changeBasemap()">
+      <ion-select-option value="streets">Streets</ion-select-option>
+      <ion-select-option value="satellite">Satellite</ion-select-option>
+      <ion-select-option value="hybrid">Hybrid</ion-select-option>
+      <ion-select-option value="topo">Topographic</ion-select-option>
+      <ion-select-option value="dark-gray">Dark Gray</ion-select-option>
+      <ion-select-option value="gray">Gray</ion-select-option>
+      <ion-select-option value="national-geographic">National Geographic</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+
+  <div id="container">
+      <!--<strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>-->
+
+  </div>
 </ion-content>
